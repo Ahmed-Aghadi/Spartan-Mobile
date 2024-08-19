@@ -1,0 +1,15 @@
+[package]
+name = "SpartanWrapper"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "SpartanWrapper"
+# crate-type = ["staticlib"]
+crate-type = ["cdylib"]
+
+[dependencies]
+spartan = { version = "0.8.0", default-features = false }
+merlin = { version = "3.0.0", default-features = false }
+jni = "0.21.1"
+
